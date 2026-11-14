@@ -149,7 +149,7 @@ body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;bac
 .head{height:78px;gap:22px}.head .logo{margin-right:auto;font-size:27px}.head .logo i{font-size:18px}
 .site-nav{order:unset;display:flex;align-items:center;gap:5px;flex-wrap:wrap}
 .site-nav a{padding:10px 13px;border:1px solid transparent;border-radius:40px;font:600 11px/1.3 Arial,sans-serif;letter-spacing:.25px;color:#bcbcc3;transition:color .2s,border-color .2s,background .2s}
-.site-nav a:hover,.site-nav a.current{background:#32242c;border-color:#6b3b47;color:#fff}
+.site-nav a:hover,.site-nav a.current{background:var(--accent-red);border-color:var(--accent-red);color:#fff}
 .head .motion{flex-shrink:0;border:1px solid #55505d;border-radius:24px;padding:9px 13px}
 .hero{position:relative;min-height:540px;align-items:center}.hero .slogan{font-size:clamp(21px,2.5vw,32px);max-width:520px;margin:15px 0}.hero-desc{max-width:480px;color:#bfc0ca;font-size:14px;line-height:1.8;margin:20px 0 25px}
 .hero .eyebrow{color:#ff8797}.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px}.hero-outline{border:1px solid #70606a;padding:13px 18px;color:#d5cad1;font-size:12px;border-radius:4px;transition:background .2s}.hero-outline:hover{background:#32232b}.hero .button{margin:0}
@@ -350,11 +350,16 @@ header {
   color: var(--accent-red) !important;
 }
 .site-nav a {
-  color: var(--text-muted) !important;
+  color: var(--text-main) !important;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  border-radius: 40px !important;
+  transition: all 0.2s ease !important;
 }
 .site-nav a:hover, .site-nav a.current {
-  color: var(--text-main) !important;
-  border-bottom: 2px solid var(--accent-red) !important;
+  background: var(--accent-red) !important;
+  color: #FFFFFF !important;
+  border-color: var(--accent-red) !important;
 }
 .motion {
   background: var(--surface-dark) !important;
